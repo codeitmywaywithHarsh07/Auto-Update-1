@@ -10,7 +10,7 @@ module.exports = {
     extensions: ['.js', '.jsx', '.ts', '.tsx', '.css'],
   },
   output: {
-    filename: 'main.js',
-    path: path.resolve(__dirname, '.webpack/main'),
+    filename: 'index.js',
+    path: path.resolve(__dirname, '.webpack/x64/main'),
   },
 };
