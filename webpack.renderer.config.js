@@ -15,7 +15,7 @@ module.exports = {
   },
   entry: './src/renderer.js',
   output: {
-    filename: 'renderer.js',
-    path: path.resolve(__dirname, '.webpack/renderer'),
+    filename: 'index.js',
+    path: path.resolve(__dirname, '.webpack/renderer/main_window'),
   },
 };
