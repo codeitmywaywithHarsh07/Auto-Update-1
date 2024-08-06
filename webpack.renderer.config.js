@@ -1,3 +1,4 @@
+const path = require('path');
 const rules = require('./webpack.rules');
 
 rules.push({
@@ -6,8 +7,15 @@ rules.push({
 });
 
 module.exports = {
-  // Put your normal webpack config below here
   module: {
     rules,
+  },
+  resolve: {
+    extensions: ['.js', '.jsx', '.ts', '.tsx', '.css'],
+  },
+  entry: './src/renderer.js',
+  output: {
+    filename: 'renderer.js',
+    path: path.resolve(__dirname, '.webpack/renderer'),
   },
 };
